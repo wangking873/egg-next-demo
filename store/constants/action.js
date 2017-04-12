@@ -1,0 +1,5 @@
+export const actionTypes = {
+  SAY_HELLO: 'SAY_HELLO',
+  SAY_HELLO_DONE: 'SAY_HELLO_DONE',
+  SAY_HELLO_ERROR: 'SAY_HELLO_ERROR'
+}

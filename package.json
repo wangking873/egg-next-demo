@@ -1,0 +1,56 @@
+{
+  "name": "next-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "egg": "^1.0.0",
+    "egg-next": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "next": "^2.1.0",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "react-redux": "^5.0.4",
+    "react-redux-loading-bar": "^2.8.0",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-logger": "2.7.4",
+    "redux-saga": "^0.14.6",
+    "stackframe": "^1.0.2"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "egg-bin": "^3.2.1",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.2.0",
+    "eslint": "^3.19.0",
+    "eslint-config-egg": "^3.2.0",
+    "power-assert": "^1.4.2",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "next": "next dev",
+    "dev": "egg-bin dev",
+    "build": "next build",
+    "start": "EGG_SERVER_ENV=prod NODE_ENV=production node index.js",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
